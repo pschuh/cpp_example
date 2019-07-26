@@ -1,0 +1,4 @@
+module CPPExample {
+  export *
+  header "example.h"
+}
