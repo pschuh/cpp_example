@@ -22,7 +22,7 @@ let package = Package(
             dependencies: ["CPPExample"],
             // Note: These flags are to allow importing CPPXLA, it must be importted as
             // @_implementationOnly or it will conflict with other headers.
-            swiftSettings: [.unsafeFlags(["-enable-cxx-interop"])]
+            swiftSettings: [.unsafeFlags(["-Xfrontend", "-enable-cxx-interop"])]
         ),
         .testTarget(
             name: "ExampleTests",
